@@ -1,4 +1,4 @@
-package algorithms;
+package algorithms.sorting_algorithms;
 public abstract class Sortable{
     protected int arr[];
     public abstract void sort();
