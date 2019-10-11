@@ -1,5 +1,5 @@
-package algorithms;
-class MergeSortArray extends Sortable{
+package algorithms.sorting_algorithms;
+public class MergeSortArray extends Sortable{
     public MergeSortArray(int[] arr){
         super.arr=arr;
     }

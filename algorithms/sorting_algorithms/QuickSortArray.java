@@ -1,5 +1,5 @@
-package algorithms;
-class QuickSortArray extends Sortable{
+package algorithms.sorting_algorithms;
+public class QuickSortArray extends Sortable{
     public QuickSortArray(int[] arr){
         super.arr=arr;
     }
