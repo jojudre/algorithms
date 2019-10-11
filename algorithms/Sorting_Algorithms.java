@@ -14,7 +14,6 @@ public class Sorting_Algorithms {
     public static void MergeSort(int arr[]){
         ms(arr,0,arr.length-1);
     }
-
     private static void merge(int arr[], int l, int m, int r) 
     { 
         int n1 = m - l + 1; 
@@ -105,5 +104,27 @@ public class Sorting_Algorithms {
         arr[end] = swapTemp;
 
         return i+1;
+    }
+    public static void InsertionSort(int[] arr) {
+        for(int i = 1; i < arr.length; i++){
+            int currElem = arr[i];
+            int prevKey = i - 1;
+            while(prevKey >= 0 && arr[prevKey] > currElem){
+                arr[prevKey+1] = arr[prevKey];
+                arr[prevKey] = currElem;
+                prevKey--;
+            }
+        }
+    }
+    public static void BubbleSort(int[] arr){
+        for(int i = arr.length-1 ; i > 0 ; i--){
+            for(int j = 0 ; j < i ; j++){
+                if( arr[j] > arr[j+1] ){
+                    int tmp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = tmp;
+                }
+            }
+        }
     }
 }
