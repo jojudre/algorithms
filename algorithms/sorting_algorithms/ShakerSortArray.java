@@ -1,5 +1,5 @@
-package algorithms;
-class ShakerSortArray extends Sortable{
+package algorithms.sorting_algorithms;
+public class ShakerSortArray extends Sortable{
     public ShakerSortArray(int[] arr){
         super.arr=arr;
     }
